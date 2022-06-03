@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" type="text/css" href="design.css" >
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="j0">
+        <div class="jumbotron" id="j1">     
+            <div class="container">
+                <center>    <h1 class="h"> Census 2k21-22</h1><br></center>
+            </div>
+        </div>
+
+
+   <div class="jumbotron" id="j1">     
+        <div class="container">
+   
+  <form action="" method="get">
+
+    
+        
+
+        <div class="form-group">
+            House No. : &nbsp;    
+          <input type="text" id="t1" name="house" onkeyup ="null_textfield('t1')" class="form-control" placeholder="Plot no. 1923 , Flat no. 1124, etc" >
+          <div id="housediv1" class="alldiv"  style="font-size: small; font-family: Georgia; " ></div>
+
+        </div>
+
+        <div class="form-group">
+            Type of house : &nbsp;
+            <select name="thouse" id="type"  onclick="my_fun('type')"  class="form-control">
+                <option></option>
+                <option>Cement</option>
+                <option>bricks</option>
+                <option>Hut</option>
+                <option>  Patar</option>
+
+            </select>
+            <div id="listdiv13" class="alldiv"  style="font-size: small; font-family: Georgia; "></div>
+        </div>
+
+        <div class="form-group">
+            Use of House : &nbsp;
+            <input type="text" id="living" name="houseuse" list="exampleList"  onkeyup ="null_textfield('living')"  class="form-control" >
+                <datalist id="exampleList"> 
+                    <option value="Living"> 
+                    <option value="Renting">
+                    <option value="Business">
+            </datalist>
+            <div id="div3" class="alldiv"  style="font-size: small; font-family: Georgia; "></div>
+           
+          </div>
+
+          <div class="form-group" class="form-control"  >
+            Condition of House : &nbsp;
+            <input type="radio" id="z1" name="condition" value="best" onclick="radio_click()">Best
+            <input type="radio"  id="z2" name="condition" value="good" onclick="radio_click()">Good
+            <input type="radio"  id="z3" name="condition" value="poor" onclick="radio_click()">Poor
+            <div id="z111" class="alldiv" style="font-size: small; font-family: Georgia; "></div>                   
+        </div>
+
+        <!-- <div class="form-group" class="form-control"  >
+            Family Members : &nbsp;
+            <input type="number" min="1" id="t4" name="member" value="count" onkeyup ="null_textfield('t4')" class="form-control">
+            <div id="div4" class="alldiv"></div>
+        </div> -->
+
+        <div class="form-group" class="form-control"  >
+            Name of the Head of house : &nbsp;
+            <input type="text" id="t5" name="headname" onkeyup ="null_textfield('t5')" class="form-control" placeholder=" FirstName  LastName" >
+            <div id="div5" class="alldiv"  style="font-size: small; font-family: Georgia; "></div>
+          
+        </div>
+
+          <div class="form-group" class="form-control"  >
+            Phone Number of the Head of house : &nbsp;
+            <input type="text" id="t6" name="headnumber" onkeyup = "null_textfield('t6')" class="form-control" > 
+            <div id="div6" class="alldiv" style="font-size: small; font-family: Georgia; "></div>
+            
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Gender of the Head of house : &nbsp; 
+            <input type="radio" id="zz1" name="headgender" value="male" onclick="radio_click()"> Male
+            <input type="radio" id="zz2" name="headgender" value="female" onclick="radio_click()">Female
+            <div id="zz111" class="alldiv" style="font-size: small; font-family: Georgia; "></div>                   
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Caste of Head of House : &nbsp;
+            <input type="text" id="t7" name="headcaste" list="casteList" onkeyup ="null_textfield('t7')" class="form-control">
+            <datalist id="casteList">
+                <option value="OBC">  
+                <option value="SC">
+                <option value="NT">
+                <option value="Open">
+            </datalist>
+            <div id="div7"  class="alldiv" style="font-size: small; font-family: Georgia; "></div>         
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Occupation of the Head of house : &nbsp;
+            <input type="text" id="t8" name="headoccupation" onkeyup ="null_textfield('t8')" class="form-control" placeholder="Software Engineer , Architecture , etc">
+            <div id="div8" class="alldiv" style="font-size: small; font-family: Georgia; "></div>          
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Number of rooms : &nbsp;
+            <input type="number" min="1" id="t9" name="rooms" value="room" onkeyup ="null_textfield('t9')"  class="form-control">   
+            <div id="div9" class="alldiv" style="font-size: small; font-family: Georgia; "></div>                   
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Number of married couples : &nbsp;
+            <input type="number" min="1" id="t10" name="couples" value="couple" onkeyup ="null_textfield('t10')" class="form-control">   
+            <div id="div10" class="alldiv" style="font-size: small; font-family: Georgia; "></div>               
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Source of drinking water : &nbsp;
+            <input type="text" id="t11" name="water" list="waterList" onkeyup ="null_textfield('t11')" class="form-control">
+            <datalist id="waterList">
+                <option value="Muncipalty">  
+                <option value="">
+                <option value="">
+            </datalist>
+        <div id="div11" class="alldiv" style="font-size: small; font-family: Georgia; "></div>                
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Source of Light : &nbsp;
+            <input type="text" id="t12" name="light" list="lightList" onkeyup ="null_textfield('t12')" class="form-control">
+            <datalist id="lightList">
+                <option value="Solar Panel">  
+                <option value="Muncipalty">
+                <option value="Gobar Gas">
+                <option value="Candle">
+            </datalist>
+        <div id="div12" class="alldiv" style="font-size: small; font-family: Georgia; "></div>                   
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Access to laterine : &nbsp;
+            <input type="radio" id="zzz1" name="laterine" value="yes" onclick="radio_click()">Yes  
+            <input type="radio" id="zzz2" name="laterine" value="no" onclick="radio_click()">No
+            <div id="zzz111" class="alldiv" style="font-size: small; font-family: Georgia; "></div>                   
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Avalibility of bathing facility : &nbsp;
+            <input type="radio" id="a1" name="bath_fac" value="YES" onclick="radio_click()">
+            Yes
+            <input type="radio" id="a2" name="bath_fac" value="NO"  onclick="radio_click()">
+          No
+            <div id="myd1" class="alldiv" style="font-size: small; font-family: Georgia; "></div>                   
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Avalibility of kitchen and LPG/PNG resources : &nbsp;
+            <input type="radio" id="b1" name="kit_fac" value="YES" onclick="radio_click()">
+            Yes
+            <input type="radio" id="b2" name="kit_fac" value="NO" onclick="radio_click()">
+            No
+                <div id="myd2" class="alldiv" style="font-size: small; font-family: Georgia; "></div>                   
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Main fuel used for cooking : &nbsp;
+            <select name="fuel" id="fuel"  onclick="list_valid('fuel')" class="form-control">
+                <option></option>
+                <option>woodgas</option>
+                <option>biogas</option>
+                <option>wood </option>
+                <option>kerosene</option>
+                <option>LPG/PNG</option>
+                <option> plant oil</option>
+                <option> methanoL/ethanol</option>
+                </select>
+                <div id="listdiv2" class="alldiv" style="font-size: small; font-family: Georgia; "></div>                   
+        </div>
+        <div class="form-group" class="form-control"  >
+            Access to internet : &nbsp;
+            <input type="radio" id="c1" name="it_fac" value="YES"  onclick="radio_click()" >
+            Yes
+            <input type="radio" id="c2" name="it_fac" value="NO"required onclick="radio_click()">
+            No
+                <div id="myd3" class="alldiv"  style="font-size: small; font-family: Georgia; "></div> 
+                        
+        </div>
+        <div class="form-group" class="form-control"  >
+            Laptop/Computer : &nbsp;
+            <input type="radio" id="d1" name="pc_fac" value="YES" onclick="radio_click()">
+            Yes
+            <input type="radio" id="d2" name="pc_fac" value="NO" onclick="radio_click()">
+            No
+          <div id="myd4" class="alldiv"  style="font-size: small; font-family: Georgia; "></div>
+        </div>
+        <div class="form-group" class="form-control"  >
+            Telephone/Mobile Phone/Smart Phone : &nbsp;
+            <input type="radio" id="e1" name="mb_fac" value="YES" onclick="radio_click()">
+            Yes
+            <input type="radio" id="e2" name="mb_fac" value="NO" onclick="radio_click()">
+            No
+               <div id="myd5" class="alldiv"  style="font-size: small; font-family: Georgia; "></div>
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Bicycle/Scooter/Bike : &nbsp;
+             <input type="radio" id="f1" name="2W_fac" value="YES" onclick="radio_click()">
+             Yes
+             <input type="radio" id="f2" name="2W_fac" value="NO" onclick="radio_click()">
+            No
+                <div id="myd6" class="alldiv"  style="font-size: small; font-family: Georgia; "></div>
+        </div>
+        
+        <div class="form-group" class="form-control"  >
+            Car/Jeep : &nbsp;
+             <input type="radio" id="g1" name="car_fac" value="YES" onclick="radio_click()">
+             Yes
+             <input type="radio" id="g2" name="car_fac" value="NO" onclick="radio_click()">
+             No
+                <div id="myd7" class="alldiv"  style="font-size: small; font-family: Georgia; "></div>
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Main cereal consumed in house : &nbsp;
+            <select name="cereal" id="cereal"  onclick="list_valid('cereal')" class="form-control">
+                <option></option>
+                <option>Rice</option>
+                <option>Wheat</option>
+                <option>Millets</option>
+                <option>  Barley:</option>
+                <option> Jowar</option>
+                <option> Bajra</option>
+                <option> Finger Millet</option>
+                
+                </select>
+                <div id="listdiv1" class="alldiv" style="font-size: small; font-family: Georgia; "></div>
+                
+            </select>
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            Enter no. family members : &nbsp;
+          <input id="fb2" type="number" min="0" value="0" onchange ="AddTextBox(value)" class="form-control" >
+        </div>
+
+        <div class="form-group" class="form-control"  >
+            
+          <div id="TextBoxContainer">
+            <!--Textboxes will be added here -->
+          </div>
+        <center><button type="submit" class="btn" style=" background:linear-gradient(163deg, rgba(8,8,8,1) 60%, rgba(225,206,255,1) 87%);color:white" onclick="submit_fun()">Submit</button> <br><br></center>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
